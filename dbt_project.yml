@@ -40,3 +40,9 @@ models:
     # Applies to all files under models/example/
     example:
       +materialized: table
+    raw:
+      +materialized: table
+      +schema: staging
+    mart:
+      +materialized: table
+      +schema: edw

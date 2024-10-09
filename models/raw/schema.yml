@@ -1,0 +1,42 @@
+version: 2
+
+models:
+  - name: cust_policy
+    description: "Contains synthetic data for policyholder policies and claims"
+    columns:
+      - name: CUSTOMERID
+        description: "Unique identifier for each policyholder"
+        tests:
+          - not_null
+      - name: AGE
+        description: "Age of the policyholder"
+        tests:
+          - not_null
+      - name: GENDER
+        description: "Gender of the policyholder"
+        tests:
+          - not_null
+      - name: MARITALSTATUS
+        description: "Marital status of the policyholder"
+        tests:
+          - not_null
+      - name: INCOMELEVEL
+        description: "Income level of the policyholder"
+      - name: CLAIMHISTORY
+        description: "Number of claims made by the policyholder"
+
+  - name: insurance_data
+    description: "Insurance data for claim amounts"
+    columns:
+      - name: AGE
+        description: "Age of the Policyholder"
+        tests:
+          - not_null
+      - name: GENDER
+        description: "Gender of the Policyholder"
+        tests:
+          - not_null
+      - name: INCOME
+        description: "Income of the Policyholder"
+      - name: CLAIM_AMOUNT
+        description: "Amount claimed in insurance claims"

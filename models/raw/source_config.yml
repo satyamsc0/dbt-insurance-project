@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: 'raw_insurance'
+    database: 'insurance_db'
+    schema: 'landing'
+    tables:
+      - name: 'data_synthetic'
+      - name: 'insurance_data'
